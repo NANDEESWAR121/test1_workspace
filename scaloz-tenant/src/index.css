@@ -1,0 +1,81 @@
+/* ============================================
+   GLOBAL STYLES - LUXURY MINIMALIST
+   ============================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Wix Madefor Display', 'Inter', sans-serif !important;
+    scrollbar-width: thin;
+    scrollbar-color: #5eead4 #f1f5f9;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    font-family: 'Wix Madefor Display', 'Inter', sans-serif !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    background-color: #F5F7FA !important;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
+
+/* Custom Scrollbar - Global */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f5f9;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #5eead4 0%, #2dd4bf 100%);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #2dd4bf 0%, #14b8a6 100%);
+}
+
+/* Firefox Scrollbar */
+
+/* Smooth Transitions */
+a,
+button,
+input,
+select,
+textarea {
+    transition: all 0.3s ease;
+}
+
+/* Focus States */
+*:focus {
+    outline: none !important;
+}
+
+/* Selection Color */
+::selection {
+    background-color: rgba(94, 234, 212, 0.3);
+    color: #0f172a;
+}
+
+::-moz-selection {
+    background-color: rgba(94, 234, 212, 0.3);
+    color: #0f172a;
+}

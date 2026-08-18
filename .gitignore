@@ -1,0 +1,15 @@
+node_modules/
+dist/
+build/
+target/
+*.log
+.DS_Store
+.idea/
+.vscode/
+*.jar
+*.war
+out/
+.env
+*.env
+Xevyte_Connect-main 2/
+testing-main/
