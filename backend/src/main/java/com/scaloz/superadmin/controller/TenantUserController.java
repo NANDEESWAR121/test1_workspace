@@ -955,7 +955,11 @@ public class TenantUserController {
 
             if (rawPassword != null && !rawPassword.isBlank()) {
                 user.setPassword(passwordEncoder.encode(rawPassword));
-                user.setMustChangePassword(true);
+                if (payload.containsKey("mustChangePassword")) {
+                    user.setMustChangePassword(Boolean.parseBoolean(String.valueOf(payload.get("mustChangePassword"))));
+                } else {
+                    user.setMustChangePassword(true);
+                }
                 user.setPasswordChangedAt(java.time.LocalDateTime.now(java.time.ZoneId.systemDefault()));
             } else if (user.getId() == null || user.getPassword() == null || user.getPassword().isBlank()) {
                 String defaultTemp = "Welcome123!";
